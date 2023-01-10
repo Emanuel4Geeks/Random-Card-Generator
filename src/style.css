@@ -1,1 +1,47 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #056605;
+  height: 100%;
+  padding-top: 3rem;
+}
+
+#controls {
+  padding: 1rem;
+  background-color: darkgrey;
+}
+
+button {
+  min-width: fit-content;
+}
+
+#card {
+  font-size: 10vh;
+  background-color: white;
+  display: grid;
+  width: 30vh;
+  place-items: center;
+  margin: 0 auto;
+  grid-template:
+    "a . ." 1fr
+    ". b ." 1fr
+    ". . c" 1fr / 1fr 1fr 1fr;
+}
+
+#top {
+  grid-area: a;
+}
+
+#num {
+  grid-area: b;
+}
+
+#bottom {
+  grid-area: c;
+  transform: rotate(180deg);
+}
+
+.red #top,
+.red #bottom {
+  color: red;
+}

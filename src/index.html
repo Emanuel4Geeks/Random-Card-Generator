@@ -13,17 +13,36 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container text-center">
+      <div id="controls" class="buttons m-auto col-xs-12 col-sm-6 mb-3 p-3">
+        <button id="change">Change value</button>
+        <div class="mt-3">
+          <label
+            >Width:
+            <input
+              type="number"
+              min="0"
+              id="width"
+              class="align-self-end"
+              placeholder="Value in vw (viewport)"
+          /></label>
+          <label
+            >Height:
+            <input
+              type="number"
+              min="0"
+              id="height"
+              class="align-self-end"
+              placeholder="Value in vh"
+          /></label>
+        </div>
       </div>
+      <main id="card" class="card col-sm-12">
+        <div id="top"></div>
+        <div id="num"></div>
+        <div id="bottom"></div>
+      </main>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
